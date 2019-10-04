@@ -226,6 +226,19 @@ img {
   padding: 2px 16px;
 }
 
+.simple-card {
+  margin: 1rem;
+}
+.simple-card-icon {
+  font-size: 2rem;
+}
+
+simple-card-header {
+}
+
+simple-card-content {
+}
+
 /* Overlay */
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -306,7 +319,23 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   /* grid-auto-rows: auto; */
 
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
+}
+
+.key-points {
+  background: url(images/horsemountain.jpg) no-repeat top;
+}
+.dark-overlay-key {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--main-light);
+}
+
+.key-points-grid {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: auto;
 }
 
 /* 
