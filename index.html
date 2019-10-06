@@ -8,10 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather+Sans|Poppins&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
-      rel="stylesheet"
-    />
+   
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/1c822b092f.js"
@@ -61,12 +58,12 @@
 
       <!-- (((((((((((((( ABOUT SECTION  ))))))))))))))  -->
       <section class="about  text-center m-1 text-dark">
-        <div class="medium">ABOUT DEERWOOD FARM</div>
-        <p>
+        <div class="medium font-display">ABOUT DEERWOOD FARM</div>
+        <p class="font-content">
           Deerwood Farm is a private, family owned and operated facility in the
           heart of Barrington Hills, IL. Located 30 miles northwest of Chicago.
         </p>
-        <p class="my-1">
+        <p class="my-1 font-content"">
           Since building our new facility in 2007, we have successfully trained
           and shown hunters, jumpers, equitation and ponies to many IHJA
           championships both at rated (A) and unrated shows (B).
@@ -79,7 +76,7 @@
       <section class="info">
         <div class="info1 bg-green">
           <div class="large font-display">What We Do</div>
-          <p class="font-header">
+          <p class="font-content">
             At Deerwood Farm we specialize in training the horse and rider in a
             safe but fun environment where everyone is like family. Our program
             emphasises basic horsemanship skills for even the youngest riders.
@@ -159,7 +156,7 @@
                 <div class="lead">
                   OUR TRAINERS
                 </div>
-                <p class="small">
+                <p class="small font">
                   Contact us to plan a visit! We are experienced training riders
                   of all ages and experience levels!
                 </p>
@@ -296,14 +293,39 @@
         </div>
       </section>
 
-      <!-- (((((((((((((( CONTACT FORM  ))))))))))))))  -->
-      <section class="contact" id="contact">
-        <div class="contact-form"></div>
+      <!-- (((((((((((((( CONTACT FORM && INFO ))))))))))))))  -->
+      <section class="contact bg-primary" id="contact">
+        <div class="contact-grid">
+          <div class="contact-form bg-white m-2 p-2">
+            <div class="form-title py-1 medium" >CONTACT</div>
+            <form action="/action_page.php" method="post">
+  <input type="text" name="name" placeholder="name*" class="form-input" required>
+          <input type="text" name="email"  placeholder="email*" class="form-input" required >
+          <input type="text" name="phone" placeholder="phone" class="form-input" >
+           
+         <input type="textarea" name="message" class="form-textarea" placeholder="message*" required>
+         
+             <input type="submit" class=" btn btn-form my-1" value="Submit" > 
+             <p class="x-small">*required fields</p>
+       
+              
+            </form>
+          </div>
+          <div class="contact-info text-light m-2 p-2 ">
+            <div>DEERWOOD FARM</div>
+            <div>99 W. COUNTY LINE RD</div>
+            <div>BARRINGTON HILLS, IL</div>
+            <br>
+            <div>PH: 815-519-8522 </div>
+            <div>PH: 847-942-4550 </div>
+            <br>
+            <a href="https://goo.gl/maps/hJ4BXdWXTNNjUPka7"><div class="btn btn-purp"><i class="fas fa-map-marker-alt"></i>   DIRECTIONS </div></a>
+          </div>
+        </div>
       </section>
-      <!-- (((((((((((((( MAP  ))))))))))))))  -->
 
       <!-- (((((((((((((( FOOTERS  ))))))))))))))  -->
-      <!-- (((((((((((((( BELOW THIS IS THE PAGE WRAPPER DIV ))))))))))))))  -->
+      <!-- (((((((((((((( BELOW THIS IS THE PAGE WRAPPER DIV ))))))))))))  -->
     </div>
 
     <script src="main.js"></script>
