@@ -1,11 +1,17 @@
-let mainNav = document.getElementById('js-menu');
+var x = document.getElementById('topNav');
 
-let navBarToggle = document.getElementById('js-navbar-toggle');
-
-navBarToggle.addEventListener('click', function() {
-  mainNav.classList.toggle('active');
-});
+function dropDown() {
+  if (x.className === 'toggle-menu') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'toggle-menu';
+  }
+}
 
 function closeUp() {
-  mainNav.classList.toggle('active');
+  if (x.className === 'toggle-menu responsive') {
+    x.className = 'toggle-menu';
+  } else {
+    x.className = 'toggle-menu repsonsive';
+  }
 }

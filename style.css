@@ -302,106 +302,62 @@ img {
   font-size: 1rem;
 }
 
-/* --------- GRID DISPLAY STYLES SPECIFIC --------- */
-
 /* --------- NAVBAR --------- */
-/*  NAVBAR STYLING */
-.navbar {
-  color: var(--main-dark);
-  background-color: white;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 18px;
-  /* padding-bottom: 10px; */
-
-  position: fixed;
-  top: 0;
-  width: 100%;
+.nav-bar-grid {
+  padding: 0px 5px;
+  display: grid;
+  grid-template-columns: 90% 10%;
 }
 
-.main-nav {
-  display: none;
-  list-style-type: none;
-}
-
-.active {
+.left-nav-menu {
+  float: left;
   display: block;
-}
-
-.nav-links,
-.logo {
   color: var(--main-dark);
+  text-align: left;
+}
+.toggle-menu > a {
   text-decoration: none;
-}
-
-.nav-links:hover {
-  color: var(--main-dark-green);
-
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.main-nav li {
-  margin: 15px auto;
-  text-align: center;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 1rem;
-}
-.navbar-toggle {
   color: var(--main-dark);
-  cursor: pointer;
-  font-size: 1rem;
-  position: absolute;
-  right: 20px;
-  top: 4px;
+  padding-right: 1em;
+  display: inline-block;
 }
 
-@media only screen and (min-width: 849px) {
-  .navbar {
-    align-items: center;
-    display: flex;
-    height: 1rem;
-    justify-content: space-between;
-    padding-bottom: 0px;
-  }
+.toggle-menu > a:hover {
+  font-weight: bold;
+}
 
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 30px;
-  }
+.icon {
+  display: none;
+}
 
-  .main-nav li {
-    margin: 0;
-  }
+.right-nav-menu {
+  text-align: right;
+}
 
-  .nav-links {
-    margin-left: 40px;
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: inline-block;
   }
-
-  .logo {
-    margin-top: 10px;
-  }
-
-  .navbar-toggle {
+  .toggle-menu a {
     display: none;
   }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: var(--main-dark-green);
-  }
 }
 
+@media screen and (max-width: 600px) {
+  .toggle-menu.responsive {
+    position: relative;
+  }
+  .toggle-menu.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
 /* Overlay */
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  top: 0;
+  top: 30;
   left: 0;
   width: 100%;
   height: 100%;
@@ -484,7 +440,7 @@ img {
   background: url(images/horsemountain.jpg) no-repeat top;
 }
 .dark-overlay-key {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.8);
   color: var(--main-light);
 }
 
@@ -496,6 +452,14 @@ img {
   grid-auto-rows: auto;
 }
 
+.simple-card {
+  color: white;
+}
+
+.simple-card-icon,
+.simple-card-header {
+  text-align: center;
+}
 .quoteblock {
   color: var(--main-dark);
 }
